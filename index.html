@@ -26,7 +26,7 @@
       >
         <img
           class="itschool-logo"
-          src="./assets/images/white-logo.svg"
+          src="./assets/white-logo.svg"
           alt="ItSchool logo"
         />
         <nav class="navigation">
@@ -61,6 +61,7 @@
               >
                 Alege un oraș
               </button>
+              <!--pentru identificarea listei ii dam un identificator-->
               <ul id="locations-list" class="dropdown-menu fs-5">
                 <li><a class="dropdown-item">Arad</a></li>
                 <li><a id="bucharest" class="dropdown-item">București</a></li>
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div class="weather-girl d-flex">
-            <img src="./assets/images/laptop-girl.png" alt="Weather girl" />
+            <img src="./assets/laptop-girl.png" alt="Weather girl" />
           </div>
         </div>
       </section>
@@ -246,9 +247,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="constants.js"></script>
-    <script type="module" src="api/currentWeather.js"></script>
-    <script type="module" src="sections/weather.js"></script>
-    <script type="module" src="index.js"></script>
+    <!--adaugam si celelate fisiere , atentie la ordine current weather foloseste constants deci prima este constants-->
+    <script type="module" src="./constants.js"></script>
+    <script type="module" src="./currentWeather.js"></script>
+    <!--facem legatura si lucram cu module-->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
